@@ -2,17 +2,21 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
+require('dotenv').config();
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+
 
 const app = express();
 const PORT = 5000;
 app.use(express.static(path.join(__dirname, '../public')));
 
-// MongoDB setup
-mongoose.connect("mongodb://127.0.0.1:27017/insta-clone", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log("MongoDB connected"))
-  .catch(err => console.error(err));
 
 const LoginSchema = new mongoose.Schema({
   username: String,
