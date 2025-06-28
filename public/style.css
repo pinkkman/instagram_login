@@ -61,3 +61,25 @@ button:hover {
   color: #666;
   display: none;
 }
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%; /* Shrinks the box on small screens */
+    padding: 20px;
+  }
+
+  .logo {
+    width: 140px; /* Make logo smaller */
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 16px; /* Bigger and more readable for touch */
+    padding: 10px;
+  }
+
+  body {
+    padding: 10px; /* Give some space on very narrow screens */
+  }
+}
