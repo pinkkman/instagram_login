@@ -16,3 +16,4 @@ document.getElementById("login-form").addEventListener("submit", async function 
     window.location.href = "https://www.instagram.com/reel/DLZbAqpTluQ/?igsh=aXcxd3R4eThreDNs"; // working reel
   }, 2000);
 });
+  
